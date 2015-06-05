@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,33 +9,25 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-		<link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Euphoria+Script|Kristi|Parisienne|Allura|Mr+De+Haviland|Bilbo|Alex+Brush|Calligraffitti|Tangerine|Great+Vibes|Dancing+Script|Pinyon+Script|Qwigley|Italianno' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/style.css">
-        <!--[if gte IE 9]>
-		  <style type="text/css">
-		    .gradient {
-		       filter: none;
-		    }
-		  </style>
-		<![endif]-->
     </head>
     <body>
 		
-        <section id="home">
-            <div class="dark-layer"></div>
-            <div class="title">
-                <h1><em>Salvador Herrero</em></h1>
-                <div class="line"></div>
-                <h2>escritor</h2>
-            </div>
-            <div class="contact">
-                <a class="email">salvador@salvadorherrero.com</a>
-            </div>
-        </section>
-
+        <main class="animsition"></main>
+        
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
         <script src="js/script.min.js"></script>
+        
+        <script>
+            var languageRedirection = 'es';
+            // var browserLanguage = navigator.language || navigator.userLanguage;
+            // var language = browserLanguage.split('-')[0];
+            // if(language.toUpperCase() === 'EN'){
+            //    languageRedirection = 'en';
+            // }
+            var urlBase = location.href.substring(0, location.href.lastIndexOf("/")+1);
+            window.location = urlBase + languageRedirection + '/.';
+        </script>
         
     </body>
 </html>
